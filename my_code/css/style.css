@@ -4,6 +4,9 @@
   padding: 0;
   font-family: "League Spartan", sans-serif;
 }
+body{
+  width: 1440px;
+}
 :root {
   --VeryDarkMagenta: hsl(300, 43%, 22%);
   --SoftPink: hsl(333, 80%, 67%);
@@ -38,7 +41,7 @@ main.container .wrapper {
 }
 main.container .wrapper .top {
   display: flex;
-  height: 30%;
+  height: 36%;
   position: absolute;
   top: 105px;
   right: 0;
@@ -46,7 +49,7 @@ main.container .wrapper .top {
   left: 265px;
 }
 main.container .wrapper .top .text {
-  width: 400px;
+  width: 300px;
   height: 250px;
   padding: 5px;
   margin-top: 25px;
@@ -73,7 +76,7 @@ main.container .wrapper .top .rating {
   margin-left: 250px;
 }
 main.container .wrapper .top .rating div {
-  width: 445px;
+  width: 485px;
   height: 58px;
   display: flex;
   justify-content: center;
@@ -81,7 +84,11 @@ main.container .wrapper .top .rating div {
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
+  color: var(--VeryDarkMagenta);
   background-color: var(--LightGrayishMagenta);
+}
+main.container .wrapper .top .rating .one .rate_img, main.container .wrapper .top .rating .two .rate_img, main.container .wrapper .top .rating .three .rate_img{
+  width: 150px;
 }
 main.container .wrapper .top .rating .two {
   margin-left: 70px;

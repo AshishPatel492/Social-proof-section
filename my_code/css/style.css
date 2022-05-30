@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+:root {
+  --VeryDarkMagenta: hsl(300, 43%, 22%);
+  --SoftPink: hsl(333, 80%, 67%);
+  --DarkGrayishMagenta: hsl(303, 10%, 53%);
+  --LightGrayishMagenta: hsl(300, 24%, 96%);
+  --White: hsl(0, 0%, 100%);
+}
+main.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+main.container .top_img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+main.container .bottom_img {
+  position: absolute;
+  top: 264px;
+  right: 0;
+  bottom: 0;
+  left: 835px;
+}
+main.container .wrapper {
+  height: 900px;
+  width: 100vw;
+  position: relative;
+}
+main.container .wrapper .top {
+  display: flex;
+  height: 30%;
+  position: absolute;
+  top: 105px;
+  right: 0;
+  bottom: 0;
+  left: 265px;
+}
+main.container .wrapper .top .text {
+  width: 400px;
+  height: 250px;
+  padding: 5px;
+  margin-top: 25px;
+}
+main.container .wrapper .top .text h1 {
+  font-size: 2.8rem;
+  color: var(--VeryDarkMagenta);
+}
+main.container .wrapper .top .text h1 span {
+  font-size: 3.5rem;
+  color: var(--VeryDarkMagenta);
+}
+main.container .wrapper .top .text p {
+  color: var(--DarkGrayishMagenta);
+  line-height: 1.5;
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+main.container .wrapper .top .rating {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 15px;
+  margin-left: 250px;
+}
+main.container .wrapper .top .rating div {
+  width: 445px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  background-color: var(--LightGrayishMagenta);
+}
+main.container .wrapper .top .rating .two {
+  margin-left: 70px;
+}
+main.container .wrapper .top .rating .three {
+  margin-left: 140px;
+}
+main.container .wrapper .top .rating div img {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+main.container .wrapper .top .rating div h3 {
+  margin-left: 15px;
+}
+main.container .wrapper .bottom {
+  height: 40%;
+  position: absolute;
+  top: 450px;
+  right: 0;
+  bottom: 0;
+  left: 265px;
+  display: flex;
+}
+main.container .wrapper .bottom .cards {
+  background: var(--VeryDarkMagenta);
+  width: 350px;
+  height: 235px;
+  margin: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+main.container .wrapper .bottom #two {
+  margin-top: 30px;
+  margin-left: 40px;
+}
+main.container .wrapper .bottom #three {
+  margin-top: 60px;
+  margin-left: 40px;
+}
+main.container .wrapper .bottom .cards .header {
+  display: flex;
+  align-items: center;
+}
+main.container .wrapper .bottom .cards .header img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+main.container .wrapper .bottom .cards .header div {
+  margin-left: 40px;
+}
+main.container .wrapper .bottom .cards .header div .name {
+  color: var(--White);
+  font-weight: 400;
+}
+main.container .wrapper .bottom .cards .header div .type {
+  color: var(--SoftPink);
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  opacity: 0.5;
+}
+main.container .wrapper .bottom .cards div p {
+  color: var(--White);
+  line-height: 1.5;
+  margin-top: 40px;
+  opacity: 0.7;
+  font-weight: 400;
+}
+@media (max-width: 375px) {
+  body {
+    overflow-x: hidden;
+  }
+  main.container .top_img {
+    background: url("../images/bg-pattern-top-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  main.container .bottom_img {
+    background: url("../images/bg-pattern-bottom-mobile.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1000px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+  }
+  main.container {
+    height: 100vh;
+  }
+  main.container .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  main.container .wrapper .top {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+  }
+  main.container .wrapper .top .text {
+    text-align: center;
+    width: 280px;
+    height: 220px;
+    margin-bottom: 25px;
+  }
+  main.container .wrapper .top .text h1{
+    font-size: 2rem;
+  }
+  main.container .wrapper .top .text h1 span{
+    font-size: 2.6rem;
+  }
+  main.container .wrapper .top .text p{
+    font-size:15px;
+  }
+  main.container .wrapper .top .rating {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 92%;
+    height: 46%;
+  }
+  main.container .wrapper .top .rating > div{
+    width:100%;
+    height: 90px;
+  }
+  main.container .wrapper .top .rating > div > div {
+    width: 150px;
+    height: 10px;
+    margin-top: 0;
+    padding-top: 0;
+  }
+  main.container .wrapper .top .rating .one {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+  main.container .wrapper .top .rating .one > div img, main.container .wrapper .top .rating .two > div img, main.container .wrapper .top .rating .three > div img{ 
+    width: 15px;
+    height: 15px;
+  }
+  main.container .wrapper .top .rating .one h3, main.container .wrapper .top .rating .two h3, main.container .wrapper .top .rating .three h3{ 
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  main.container .wrapper .top .rating .two {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+  main.container .wrapper .top .rating .three {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  main.container .wrapper .bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    top: 630px;
+    left: 0;
+  }
+  main.container .wrapper .bottom .cards{
+    width: 280px;
+    margin: 20px;
+    padding: 0 30 0 0;
+    height: 220px;
+
+  }
+  main.container .wrapper .bottom #one {
+    margin-left:0 ;
+  }
+  main.container .wrapper .bottom #two {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  main.container .wrapper .bottom #three {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  main.container .wrapper .bottom .cards .header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  main.container .wrapper .bottom .cards .header div .name {
+    color: var(--White);
+    font-size: 1.3rem;
+    font-weight: 400;
+  }
+  main.container .wrapper .bottom .cards .header div .type {
+    color: var(--SoftPink);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.5;
+  }
+  main.container .wrapper .bottom .cards div p {
+    color: var(--White);
+    font-size: 15px;
+    line-height: 1.5;
+    margin-top: 40px;
+    opacity: 0.7;
+    font-weight: 400;
+  }
+}
